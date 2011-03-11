@@ -10,7 +10,11 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.has_rdoc = true
   s.authors = ["Zach Dennis", "Mark Van Holstyn", "Blythe Dunham"]
-  s.files = FileList[ 'init.rb', 'db/**/*', 'Rakefile', 'ChangeLog', 'README', 'config/**/*', 'lib/**/*.rb', 'test/**/*' ]
+  s.files = %w(init.rb Rakefile ChangeLog README) +
+    Dir.glob('db/**/*') +
+    Dir.glob('config/**/*') +
+    Dir.glob('lib/**/*.rb') +
+    Dir.glob('test/**/*')
   s.rdoc_options = ["--main", "README"]
   s.extra_rdoc_files = ["README"]
   s.add_dependency(%q<activerecord>, ["~> 2.1"])
