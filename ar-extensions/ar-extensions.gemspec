@@ -8,7 +8,6 @@ Gem::Specification.new do |s|
   s.rubyforge_project = %q{arext}
   s.description = %q{Extends ActiveRecord functionality by adding better finder/query support, as well as supporting mass data import, foreign key, CSV and temporary tables}
   s.require_path = 'lib'
-  s.has_rdoc = true
   s.authors = ["Zach Dennis", "Mark Van Holstyn", "Blythe Dunham"]
   s.files = %w(init.rb Rakefile ChangeLog README) +
     Dir.glob('db/**/*') +
